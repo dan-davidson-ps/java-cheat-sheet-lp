@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Poiret";
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+body {
+  background: #ffffff;
+  font-family: Nunito,arial,verdana;
+}
+
+.headline {
+  font-family: "Poiret";
+  background-color: #fff;
+  color: #413833;
+  padding: 5px 0px 10px 45px;
+  letter-spacing: 0.43px;
+}
+
+#accordion {
+  max-width: 1200px;
+  margin: 100px auto 0;
+  color: #fff;
+  border: 7px solid #D1D2D3;
+  background-color: #fff;
+}
+
+.accordion-head {
+  padding: 30px 15px;
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  border-top: 1px solid #000;
+  margin: 0px 45px;
+  font-family: "Raleway";
+}
+
+#accordion h3 span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#accordion li {
+  list-style-type: none;
+}
+
+#accordion ul ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 27px;
+  display: block;
+  padding: 0 15px;
+  transition: all .15s;
+}
+
+#accordion ul ul {
+  display: none;
+}
+
+#accordion.active ul {
+  display: block;
+}
+
+.border {
+  padding: 0px;
+}
+
+.border img {
+  width: 100%;
+}
+
+.data {
+  max-width: 680px;
+}
+
+.accordion-body {
+  display: none;
+}
+
+/* Phones and down */
+@media (max-width: 1200px) {
+  #accordion {
+    margin: 0px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #accordion {
+    margin: 0px auto 0;
+  }
+  #accordion h3 {
+    margin: 0px 15px;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  .headline {
+    font-size: 21px;
+    padding: 2px 0px 5px 25px;
+  }
+  #accordion ul ul li a {
+    padding: 0px;
+  }
+  .data {
+    padding-right: 15px;
+  }
+}
